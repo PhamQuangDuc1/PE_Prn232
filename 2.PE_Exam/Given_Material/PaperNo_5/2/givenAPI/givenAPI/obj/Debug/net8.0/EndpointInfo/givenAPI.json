@@ -1,0 +1,74 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "givenAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/booking-statuses": {
+      "get": {
+        "tags": [
+          "GymApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/members/search": {
+      "get": {
+        "tags": [
+          "GymApi"
+        ],
+        "parameters": [
+          {
+            "name": "memberName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "bookingStatus",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "All statuses"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/members/{memberId}": {
+      "get": {
+        "tags": [
+          "GymApi"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

@@ -1,0 +1,11 @@
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\givenAPI.exe
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\appsettings.Development.json
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\appsettings.json
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\givenAPI.dll
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\givenAPI.deps.json
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\givenAPI.runtimeconfig.json
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\givenAPI.pdb
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\Microsoft.OpenApi.dll
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\Swashbuckle.AspNetCore.Swagger.dll
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Ra de\Summer 26 - Lan 2\givenAPI\De 4\givenAPI\givenAPI\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -1,0 +1,49 @@
+[
+  {
+    "ContainingType": "GivenAPIs.Controllers.GymApiController",
+    "Method": "GetBookingStatuses",
+    "RelativePath": "api/booking-statuses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GivenAPIs.Controllers.GymApiController",
+    "Method": "GetMemberDetails",
+    "RelativePath": "api/members/{memberId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GivenAPIs.Controllers.GymApiController",
+    "Method": "SearchMembers",
+    "RelativePath": "api/members/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "bookingStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

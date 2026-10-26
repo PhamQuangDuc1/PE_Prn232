@@ -1,0 +1,49 @@
+[
+  {
+    "ContainingType": "GivenAPIs.Controllers.GymApiController",
+    "Method": "GetSpecializations",
+    "RelativePath": "api/specializations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GivenAPIs.Controllers.GymApiController",
+    "Method": "GetTrainerDetails",
+    "RelativePath": "api/trainers/{trainerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trainerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GivenAPIs.Controllers.GymApiController",
+    "Method": "SearchTrainers",
+    "RelativePath": "api/trainers/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "specId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trainerName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

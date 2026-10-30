@@ -1,0 +1,128 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Q1",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Specialization": {
+      "get": {
+        "tags": [
+          "Specialization"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Specialization/filter-trainers": {
+      "get": {
+        "tags": [
+          "Specialization"
+        ],
+        "parameters": [
+          {
+            "name": "specId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "minExperience",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Specialization/trainers": {
+      "post": {
+        "tags": [
+          "Specialization"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainerCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainerCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TrainerCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Specialization/trainers/{trainerId}": {
+      "delete": {
+        "tags": [
+          "Specialization"
+        ],
+        "parameters": [
+          {
+            "name": "trainerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TrainerCreateDTO": {
+        "type": "object",
+        "properties": {
+          "trainerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "experienceYears": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

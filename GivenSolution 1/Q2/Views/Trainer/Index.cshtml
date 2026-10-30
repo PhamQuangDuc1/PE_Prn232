@@ -1,0 +1,90 @@
+@model List<Q2.Models.TrainerSearchDTO>
+@{
+    Layout = null;
+    var specs = ViewBag.Specializations as List<Q2.Models.SpecializationDTO> ?? new List<Q2.Models.SpecializationDTO>();
+    int selectedSpecId = ViewBag.SelectedSpecId != null ? (int)ViewBag.SelectedSpecId : 0;
+    var trainerName = ViewBag.TrainerName as string ?? "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Trainer Booking Directory</title>
+</head>
+<body>
+<div class="gym-wrap">
+    <h2 style="margin-top: 0; margin-bottom: 20px;">Trainer Booking Directory</h2>
+
+    <form method="get" action="/Trainer" class="filter-section">
+        <div class="filter-item">
+            <label>Specialization:</label>
+            <select name="specId" id="sl_specializations">
+                @if (selectedSpecId == 0)
+                {
+                    <option value="0" id="op_0" selected>All specializations</option>
+                }
+                else
+                {
+                    <option value="0" id="op_0">All specializations</option>
+                }
+                @foreach (var s in specs)
+                {
+                    if (selectedSpecId == s.SpecID)
+                    {
+                        <option value="@s.SpecID" id="op_@s.SpecID" selected>@s.SpecName</option>
+                    }
+                    else
+                    {
+                        <option value="@s.SpecID" id="op_@s.SpecID">@s.SpecName</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label>Trainer Name:</label>
+            <input type="text" name="trainerName" id="ip_trainerName" value="@trainerName" placeholder="Enter trainer name...">
+        </div>
+
+        <button type="submit" id="bt_search" class="btn-submit">Search</button>
+    </form>
+
+    <table class="trainer-table">
+        <thead>
+            <tr>
+                <th style="width: 250px;">Trainer Name</th>
+                <th style="width: 250px;">Email</th>
+                <th style="width: 150px;">Experience Years</th>
+                <th style="width: 250px;">Specializations</th>
+                <th style="width: 150px;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var t in Model)
+                {
+                    <tr>
+                        <td id="td_name_@t.TrainerID">@t.TrainerName</td>
+                        <td id="td_email_@t.TrainerID">@t.Email</td>
+                        <td id="td_exp_@t.TrainerID">@t.ExperienceYears</td>
+                        <td>
+                            @if (t.Specializations != null)
+                            {
+                                foreach (var sp in t.Specializations)
+                                {
+                                    <span id="span_@(sp.SpecName)_@(sp.SpecID)" class="spec-badge">@sp.SpecName</span>
+                                }
+                            }
+                        </td>
+                        <td>
+                            <a href="/Trainer/Analyze/@t.TrainerID" id="a_@t.TrainerID" class="btn-action">Analyze Schedule</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

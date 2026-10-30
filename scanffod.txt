@@ -1,0 +1,38 @@
+dotnet ef dbcontext scaffold "Server=(localdb)\MSSQLLocalDB;Database=PRN232_PE_SU26_13;User Id=sa;Password=12345;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+
+program---
+using Microsoft.EntityFrameworkCore;
+using Q1.Models;
+
+var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("MyCnn");
+builder.Services.AddDbContext<Prn232PeSu2613Context>(options =>
+    options.UseSqlServer(connectionString));
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+var app = builder.Build();
+if(app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run();
+-----------------------------------------
+dbcontext---------------
+ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+ {
+     var builder = new ConfigurationBuilder()
+         .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+         .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+     IConfigurationRoot configuration = builder.Build();
+     if (!optionsBuilder.IsConfigured)
+     {
+         optionsBuilder.UseSqlServer(configuration.GetConnectionString("MyCnn"));
+     }
+ }
+---------------------------------------------

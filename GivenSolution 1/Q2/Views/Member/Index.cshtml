@@ -1,0 +1,81 @@
+@model List<Q2.Models.MemberSearchDTO>
+@{
+    Layout = null;
+    var statuses = ViewBag.Statuses as List<string> ?? new List<string>();
+    var selectedStatus = ViewBag.SelectedStatus as string ?? "All statuses";
+    var memberName = ViewBag.MemberName as string ?? "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Gym Member Directory Management</title>
+</head>
+<body>
+<div class="gym-container">
+    <h2 style="margin-top: 0; margin-bottom: 20px;">Gym Member Directory Management</h2>
+
+    <form method="get" action="/Member" class="filter-section">
+        <div class="filter-item">
+            <label>Member Name:</label>
+            <input type="text" name="memberName" id="ip_memberName" value="@memberName" placeholder="Enter member name...">
+        </div>
+
+        <div class="filter-item">
+            <label>Booking Status:</label>
+            <select name="bookingStatus" id="sl_bookingStatus">
+                @if (selectedStatus == "All statuses")
+                {
+                    <option value="All statuses" id="op_all" selected>All statuses</option>
+                }
+                else
+                {
+                    <option value="All statuses" id="op_all">All statuses</option>
+                }
+                @foreach (var status in statuses)
+                {
+                    var optId = "op_" + status.Replace(" ", "_");
+                    if (selectedStatus == status)
+                    {
+                        <option value="@status" id="@optId" selected>@status</option>
+                    }
+                    else
+                    {
+                        <option value="@status" id="@optId">@status</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <button type="submit" id="bt_search" class="btn-submit">Search</button>
+    </form>
+
+    <table class="member-table">
+        <thead>
+            <tr>
+                <th style="width: 250px;">Member Name</th>
+                <th style="width: 200px;">Join Date</th>
+                <th style="width: 250px;">Assigned Package</th>
+                <th style="width: 150px;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var m in Model)
+                {
+                    <tr>
+                        <td id="td_name_@m.MemberID">@m.FullName</td>
+                        <td id="td_joinDate_@m.MemberID">@m.JoinDate.ToString("yyyy-MM-dd")</td>
+                        <td id="td_package_@m.MemberID">@m.PackageName</td>
+                        <td>
+                            <a href="/Member/Analyze/@m.MemberID" id="a_@m.MemberID" class="btn-action">Analyze Sales</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

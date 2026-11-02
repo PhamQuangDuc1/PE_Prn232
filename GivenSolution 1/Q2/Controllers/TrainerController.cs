@@ -16,6 +16,7 @@ namespace Q2.Controllers
         }
 
         [HttpGet("/Trainer")]
+        [HttpGet("/Trainer/Index")]
         public async Task<IActionResult> Index([FromQuery] int specId = 0, [FromQuery] string? trainerName = null)
         {
             var specsUrl = _baseUrl + "/api/specializations";

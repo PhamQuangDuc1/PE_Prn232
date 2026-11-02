@@ -12,29 +12,29 @@ build_property.EntryPointFilePath =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Q2
 build_property.RootNamespace = Q2
-build_property.ProjectDir = C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q2\
+build_property.ProjectDir = C:\duc\PE_Prn232\GivenSolution 1\Q2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q2
+build_property.MSBuildProjectDirectory = C:\duc\PE_Prn232\GivenSolution 1\Q2
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Mr Duc/Downloads/GivenSolution_PRN232/PE_Prn232/GivenSolution 1/Q2/Views/Member/Analyze.cshtml]
+[C:/duc/PE_Prn232/GivenSolution 1/Q2/Views/Member/Analyze.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEFuYWx5emUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mr Duc/Downloads/GivenSolution_PRN232/PE_Prn232/GivenSolution 1/Q2/Views/Member/Index.cshtml]
+[C:/duc/PE_Prn232/GivenSolution 1/Q2/Views/Member/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mr Duc/Downloads/GivenSolution_PRN232/PE_Prn232/GivenSolution 1/Q2/Views/Trainer/Analyze.cshtml]
+[C:/duc/PE_Prn232/GivenSolution 1/Q2/Views/Trainer/Analyze.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxBbmFseXplLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mr Duc/Downloads/GivenSolution_PRN232/PE_Prn232/GivenSolution 1/Q2/Views/Trainer/Index.cshtml]
+[C:/duc/PE_Prn232/GivenSolution 1/Q2/Views/Trainer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -610,3 +610,4 @@ C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q1\obj\
 C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q1\obj\Debug\net8.0\Q1.pdb
 C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q1\obj\Debug\net8.0\Q1.genruntimeconfig.cache
 C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q1\obj\Debug\net8.0\ref\Q1.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

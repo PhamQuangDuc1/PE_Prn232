@@ -1,18 +1,29 @@
 [
   {
-    "ContainingType": "Q1.Controllers.SpecializationController",
-    "Method": "GetSpecializations",
-    "RelativePath": "api/Specialization",
+    "ContainingType": "Q1.Controllers.MembershipPackagesController",
+    "Method": "FilterMembers",
+    "RelativePath": "api/filter-members",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "packageId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "minDuration",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Q1.Controllers.SpecializationController",
     "Method": "FilterTrainers",
-    "RelativePath": "api/Specialization/filter-trainers",
+    "RelativePath": "api/filter-trainers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -31,9 +42,61 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Q1.Controllers.MembershipPackagesController",
+    "Method": "GetMembershipPackages",
+    "RelativePath": "api/MembershipPackages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q1.Controllers.MembershipPackagesController",
+    "Method": "AddMembershipPackage",
+    "RelativePath": "api/MembershipPackages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Q1.DTOs.MembershipPackageCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q1.Controllers.MembershipPackagesController",
+    "Method": "DeleteMembershipPackage",
+    "RelativePath": "api/MembershipPackages/{packageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "packageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q1.Controllers.SpecializationController",
+    "Method": "GetSpecializations",
+    "RelativePath": "api/Specializations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Q1.Controllers.SpecializationController",
     "Method": "AddTrainer",
-    "RelativePath": "api/Specialization/trainers",
+    "RelativePath": "api/trainers",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -49,7 +112,7 @@
   {
     "ContainingType": "Q1.Controllers.SpecializationController",
     "Method": "DeleteTrainer",
-    "RelativePath": "api/Specialization/trainers/{trainerId}",
+    "RelativePath": "api/trainers/{trainerId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

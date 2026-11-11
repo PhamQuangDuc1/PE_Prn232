@@ -15,6 +15,7 @@ namespace Q2.Controllers
             _baseUrl = (configuration["GivenAPIBaseUrl"] ?? "http://localhost:5100").TrimEnd('/');
         }
 
+        [HttpGet("/")]
         [HttpGet("/Member")]
         public async Task<IActionResult> Index([FromQuery] string? memberName = null, [FromQuery] string? bookingStatus = "All statuses")
         {

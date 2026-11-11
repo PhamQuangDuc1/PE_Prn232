@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D371B0B-2EAF-F120-BADA-E88072E333F0}|Q2\\Q2.csproj|c:\\users\\mr duc\\downloads\\givensolution_prn232\\pe_prn232\\givensolution 1\\q2\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D371B0B-2EAF-F120-BADA-E88072E333F0}|Q2\\Q2.csproj|solutionrelative:q2\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D371B0B-2EAF-F120-BADA-E88072E333F0}|Q2\\Q2.csproj|c:\\users\\mr duc\\downloads\\givensolution_prn232\\pe_prn232\\givensolution 1\\q2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D371B0B-2EAF-F120-BADA-E88072E333F0}|Q2\\Q2.csproj|solutionrelative:q2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70BCFB98-38FF-9B62-47B0-5D79C95637DC}|Q1\\Q1.csproj|c:\\users\\mr duc\\downloads\\givensolution_prn232\\pe_prn232\\givensolution 1\\q1\\controllers\\specializationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70BCFB98-38FF-9B62-47B0-5D79C95637DC}|Q1\\Q1.csproj|solutionrelative:q1\\controllers\\specializationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{70BCFB98-38FF-9B62-47B0-5D79C95637DC}|Q1\\Q1.csproj|c:\\users\\mr duc\\downloads\\givensolution_prn232\\pe_prn232\\givensolution 1\\q1\\q1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{70BCFB98-38FF-9B62-47B0-5D79C95637DC}|Q1\\Q1.csproj|solutionrelative:q1\\q1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D371B0B-2EAF-F120-BADA-E88072E333F0}|Q2\\Q2.csproj|c:\\users\\mr duc\\downloads\\givensolution_prn232\\pe_prn232\\givensolution 1\\q2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1D371B0B-2EAF-F120-BADA-E88072E333F0}|Q2\\Q2.csproj|solutionrelative:q2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +78,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Q2\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\appsettings.Development.json",
+              "RelativeToolTip": "Q2\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-31T10:09:25.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Specialization.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Models\\Specialization.cs",
               "RelativeDocumentMoniker": "Q1\\Models\\Specialization.cs",
@@ -86,20 +103,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SpecializationController.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Controllers\\SpecializationController.cs",
               "RelativeDocumentMoniker": "Q1\\Controllers\\SpecializationController.cs",
               "ToolTip": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Controllers\\SpecializationController.cs",
               "RelativeToolTip": "Q1\\Controllers\\SpecializationController.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAgwGIAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-27T10:31:48.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-27T10:31:48.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "TrainerCreateDTO.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\DTOs\\TrainerCreateDTO.cs",
               "RelativeDocumentMoniker": "Q1\\DTOs\\TrainerCreateDTO.cs",
@@ -111,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TrainerDtos.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\DTOs\\TrainerDtos.cs",
               "RelativeDocumentMoniker": "Q1\\DTOs\\TrainerDtos.cs",
@@ -123,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Trainer.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Models\\Trainer.cs",
               "RelativeDocumentMoniker": "Q1\\Models\\Trainer.cs",
@@ -135,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "SpecializationDto.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\DTOs\\SpecializationDto.cs",
               "RelativeDocumentMoniker": "Q1\\DTOs\\SpecializationDto.cs",
@@ -147,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Program.cs",
               "RelativeDocumentMoniker": "Q1\\Program.cs",
@@ -159,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Prn232PeSu2613Context.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Models\\Prn232PeSu2613Context.cs",
               "RelativeDocumentMoniker": "Q1\\Models\\Prn232PeSu2613Context.cs",
@@ -171,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\appsettings.json",
               "RelativeDocumentMoniker": "Q1\\appsettings.json",
@@ -183,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Q1.csproj",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Q1.csproj",
               "RelativeDocumentMoniker": "Q1\\Q1.csproj",
@@ -195,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\appsettings.json",
               "RelativeDocumentMoniker": "Q2\\appsettings.json",

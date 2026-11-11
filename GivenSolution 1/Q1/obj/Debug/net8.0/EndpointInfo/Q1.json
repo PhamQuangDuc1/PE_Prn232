@@ -5,7 +5,101 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Specialization": {
+    "/api/MembershipPackages": {
+      "get": {
+        "tags": [
+          "MembershipPackages"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MembershipPackages"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MembershipPackageCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MembershipPackageCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MembershipPackageCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/filter-members": {
+      "get": {
+        "tags": [
+          "MembershipPackages"
+        ],
+        "parameters": [
+          {
+            "name": "packageId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "minDuration",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MembershipPackages/{packageId}": {
+      "delete": {
+        "tags": [
+          "MembershipPackages"
+        ],
+        "parameters": [
+          {
+            "name": "packageId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Specializations": {
       "get": {
         "tags": [
           "Specialization"
@@ -17,7 +111,7 @@
         }
       }
     },
-    "/api/Specialization/filter-trainers": {
+    "/api/filter-trainers": {
       "get": {
         "tags": [
           "Specialization"
@@ -47,7 +141,7 @@
         }
       }
     },
-    "/api/Specialization/trainers": {
+    "/api/trainers": {
       "post": {
         "tags": [
           "Specialization"
@@ -78,7 +172,7 @@
         }
       }
     },
-    "/api/Specialization/trainers/{trainerId}": {
+    "/api/trainers/{trainerId}": {
       "delete": {
         "tags": [
           "Specialization"
@@ -104,6 +198,21 @@
   },
   "components": {
     "schemas": {
+      "MembershipPackageCreateDto": {
+        "type": "object",
+        "properties": {
+          "packageName": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "TrainerCreateDTO": {
         "type": "object",
         "properties": {

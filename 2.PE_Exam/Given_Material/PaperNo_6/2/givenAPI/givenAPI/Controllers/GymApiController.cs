@@ -1,12 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace GivenAPIs.Models
 {
-    // --- Các lớp thực thể Entity tương ứng với Database Schema ---
-
     public class MembershipPackage
     {
         public int PackageID { get; set; }
@@ -50,7 +48,7 @@ namespace GivenAPIs.Models
         public int BookingID { get; set; }
         public int MemberID { get; set; }
         public int DurationMinutes { get; set; }
-        public string Status { get; set; } = null!; // Da tap, Da huy, Cho mien
+        public string Status { get; set; } = null!;
     }
 
     public class TrainerSpec
@@ -58,13 +56,38 @@ namespace GivenAPIs.Models
         public int TrainerID { get; set; }
         public int SpecID { get; set; }
     }
+
+    public class MemberSearchDTO
+    {
+        public int MemberID { get; set; }
+        public string FullName { get; set; } = null!;
+        public DateTime JoinDate { get; set; }
+        public string PackageName { get; set; } = null!;
+    }
+
+    public class MemberSessionDTO
+    {
+        public int BookingID { get; set; }
+        public string TrainerName { get; set; } = null!;
+        public DateTime SessionTime { get; set; }
+        public int DurationMinutes { get; set; }
+        public string Status { get; set; } = null!;
+    }
+
+    public class MemberDetailDTO
+    {
+        public int MemberID { get; set; }
+        public string FullName { get; set; } = null!;
+        public DateTime JoinDate { get; set; }
+        public string PackageName { get; set; } = null!;
+        public decimal PackagePrice { get; set; }
+        public List<MemberSessionDTO> Sessions { get; set; } = new();
+    }
 }
 
 namespace GivenAPIs.DTOs
 {
     using GivenAPIs.Models;
-
-    // --- Các lớp Data Transfer Objects (DTOs) dùng để gửi dữ liệu qua API ---
 
     public class SpecializationDTO
     {
@@ -105,7 +128,6 @@ namespace GivenAPIs.Data
 {
     using GivenAPIs.Models;
 
-    // --- Khởi tạo dữ liệu trong bộ nhớ (In-Memory) ---
     public static class DataInitializer
     {
         public static List<MembershipPackage> MembershipPackages = new()
@@ -184,7 +206,86 @@ namespace GivenAPIs.Controllers
     [ApiController]
     public class GymApiController : ControllerBase
     {
-        // GET /api/specializations - Trả về danh sách chuyên môn đổ vào dropdown
+        // --- De 1, 3, 5 (Member) ---
+        [HttpGet("api/booking-statuses")]
+        public IActionResult GetBookingStatuses()
+        {
+            var result = DataInitializer.BookingDetails
+                .Select(bd => bd.Status)
+                .Distinct()
+                .ToList();
+            return Ok(result);
+        }
+
+        [HttpGet("api/members/search")]
+        public IActionResult SearchMembers([FromQuery] string? memberName = null, [FromQuery] string? bookingStatus = "All statuses")
+        {
+            var query = DataInitializer.Members.AsQueryable();
+
+            if (!string.IsNullOrEmpty(memberName))
+            {
+                query = query.Where(m => m.FullName.Contains(memberName, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (!string.IsNullOrEmpty(bookingStatus) && !bookingStatus.Equals("All statuses", StringComparison.OrdinalIgnoreCase))
+            {
+                var memberIdsWithStatus = DataInitializer.BookingDetails
+                    .Where(bd => bd.Status.Equals(bookingStatus, StringComparison.OrdinalIgnoreCase))
+                    .Select(bd => bd.MemberID);
+
+                query = query.Where(m => memberIdsWithStatus.Contains(m.MemberID));
+            }
+
+            var result = query.AsEnumerable().Select(m =>
+            {
+                var pkg = DataInitializer.MembershipPackages.First(p => p.PackageID == m.PackageID);
+                return new MemberSearchDTO
+                {
+                    MemberID = m.MemberID,
+                    FullName = m.FullName,
+                    JoinDate = m.JoinDate,
+                    PackageName = pkg.PackageName
+                };
+            }).ToList();
+
+            return Ok(result);
+        }
+
+        [HttpGet("api/members/{memberId}")]
+        public IActionResult GetMemberDetails(int memberId)
+        {
+            var member = DataInitializer.Members.FirstOrDefault(m => m.MemberID == memberId);
+            if (member == null) return NotFound();
+
+            var pkg = DataInitializer.MembershipPackages.First(p => p.PackageID == member.PackageID);
+
+            var sessions = (from bd in DataInitializer.BookingDetails
+                            join b in DataInitializer.Bookings on bd.BookingID equals b.BookingID
+                            join t in DataInitializer.Trainers on b.TrainerID equals t.TrainerID
+                            where bd.MemberID == memberId
+                            select new MemberSessionDTO
+                            {
+                                BookingID = b.BookingID,
+                                TrainerName = t.TrainerName,
+                                SessionTime = b.SessionTime,
+                                DurationMinutes = bd.DurationMinutes,
+                                Status = bd.Status
+                            }).ToList();
+
+            var result = new MemberDetailDTO
+            {
+                MemberID = member.MemberID,
+                FullName = member.FullName,
+                JoinDate = member.JoinDate,
+                PackageName = pkg.PackageName,
+                PackagePrice = pkg.Price,
+                Sessions = sessions
+            };
+
+            return Ok(result);
+        }
+
+        // --- De 2, 4, 6 (Trainer) ---
         [HttpGet("api/specializations")]
         public IActionResult GetSpecializations()
         {
@@ -197,13 +298,11 @@ namespace GivenAPIs.Controllers
             return Ok(result);
         }
 
-        // GET /api/trainers/search?specId=1&trainerName=Nguyen - Lọc nâng cao kết hợp Dropdown và Input Text
         [HttpGet("api/trainers/search")]
         public IActionResult SearchTrainers([FromQuery] int specId = 0, [FromQuery] string? trainerName = null)
         {
             var query = DataInitializer.Trainers.AsQueryable();
 
-            // 1. Lọc theo chuyên môn (nếu chọn cụ thể)
             if (specId > 0)
             {
                 var trainerIdsWithSpec = DataInitializer.TrainerSpecs
@@ -213,13 +312,11 @@ namespace GivenAPIs.Controllers
                 query = query.Where(t => trainerIdsWithSpec.Contains(t.TrainerID));
             }
 
-            // 2. Lọc tương đối theo tên huấn luyện viên (không phân biệt chữ hoa/thường)
             if (!string.IsNullOrEmpty(trainerName))
             {
                 query = query.Where(t => t.TrainerName.Contains(trainerName, StringComparison.OrdinalIgnoreCase));
             }
 
-            // Map dữ liệu sang DTO và đính kèm danh sách chuyên môn cho mỗi huấn luyện viên
             var result = query.Select(t => new TrainerSearchDTO
             {
                 TrainerID = t.TrainerID,
@@ -239,7 +336,6 @@ namespace GivenAPIs.Controllers
             return Ok(result);
         }
 
-        // GET /api/trainers/{trainerId} - Chi tiết huấn luyện viên và lịch hẹn tập của hội viên
         [HttpGet("api/trainers/{trainerId}")]
         public IActionResult GetTrainerDetails(int trainerId)
         {
@@ -249,7 +345,6 @@ namespace GivenAPIs.Controllers
                 return NotFound();
             }
 
-            // Lấy danh sách các chuyên môn của HLV
             var specs = (from ts in DataInitializer.TrainerSpecs
                          join s in DataInitializer.Specializations on ts.SpecID equals s.SpecID
                          where ts.TrainerID == trainerId
@@ -259,7 +354,6 @@ namespace GivenAPIs.Controllers
                              SpecName = s.SpecName
                          }).ToList();
 
-            // Tìm kiếm các buổi hẹn tập đã xếp lịch với HLV này
             var sessions = (from b in DataInitializer.Bookings
                             join bd in DataInitializer.BookingDetails on b.BookingID equals bd.BookingID
                             join m in DataInitializer.Members on bd.MemberID equals m.MemberID

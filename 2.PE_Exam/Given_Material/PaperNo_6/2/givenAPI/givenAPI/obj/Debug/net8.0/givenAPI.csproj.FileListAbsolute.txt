@@ -94,3 +94,36 @@ D:\Ra de\Summer 26 - Lan 2\givenAPI\De 3\givenAPI\obj\Debug\net8.0\refint\givenA
 D:\Ra de\Summer 26 - Lan 2\givenAPI\De 3\givenAPI\obj\Debug\net8.0\givenAPI.pdb
 D:\Ra de\Summer 26 - Lan 2\givenAPI\De 3\givenAPI\obj\Debug\net8.0\givenAPI.genruntimeconfig.cache
 D:\Ra de\Summer 26 - Lan 2\givenAPI\De 3\givenAPI\obj\Debug\net8.0\ref\givenAPI.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\appsettings.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\givenAPI.exe
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\givenAPI.deps.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\givenAPI.runtimeconfig.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\givenAPI.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\givenAPI.pdb
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.csproj.AssemblyReference.cache
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.AssemblyInfoInputs.cache
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.AssemblyInfo.cs
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.csproj.CoreCompileInputs.cache
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.sourcelink.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\staticwebassets\msbuild.givenAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.givenAPI.props
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.givenAPI.props
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.givenAPI.props
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\scopedcss\bundle\givenAPI.styles.css
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.csproj.Up2Date
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\refint\givenAPI.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.pdb
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\givenAPI.genruntimeconfig.cache
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\givenAPI\obj\Debug\net8.0\ref\givenAPI.dll

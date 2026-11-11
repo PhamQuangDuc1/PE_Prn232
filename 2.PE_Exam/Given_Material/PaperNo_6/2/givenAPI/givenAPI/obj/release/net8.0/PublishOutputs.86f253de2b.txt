@@ -1,0 +1,11 @@
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\givenAPI.exe
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\appsettings.Development.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\appsettings.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\givenAPI.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\givenAPI.deps.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\givenAPI.runtimeconfig.json
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\givenAPI.pdb
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\Microsoft.OpenApi.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\2.PE_Exam\Given_Material\PaperNo_6\2\givenAPI\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

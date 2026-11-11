@@ -99,3 +99,38 @@ C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q2\obj\
 C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.pdb
 C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.genruntimeconfig.cache
 C:\Users\Mr Duc\Downloads\GivenSolution_PRN232\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\ref\Q2.dll
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\appsettings.Development.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\appsettings.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\Q2.staticwebassets.runtime.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\Q2.staticwebassets.endpoints.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\Q2.exe
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\Q2.deps.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\Q2.runtimeconfig.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\Q2.dll
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\Q2.pdb
+C:\duc\PE_Prn232\GivenSolution 1\Q2\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.csproj.AssemblyReference.cache
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.GeneratedMSBuildEditorConfig.editorconfig
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.AssemblyInfoInputs.cache
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.AssemblyInfo.cs
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.csproj.CoreCompileInputs.cache
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.MvcApplicationPartsAssemblyInfo.cache
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.RazorAssemblyInfo.cache
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.RazorAssemblyInfo.cs
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.sourcelink.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\scopedcss\bundle\Q2.styles.css
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\staticwebassets.build.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\staticwebassets.development.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\swae.build.ex.cache
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.csproj.Up2Date
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.dll
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\refint\Q2.dll
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.pdb
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\Q2.genruntimeconfig.cache
+C:\duc\PE_Prn232\GivenSolution 1\Q2\obj\Debug\net8.0\ref\Q2.dll

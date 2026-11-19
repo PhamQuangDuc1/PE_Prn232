@@ -1,0 +1,11 @@
+FE (Index.cshtml)                     BE (Index.cshtml.cs)
+─────────────────────────────────────────────────────────────────
+name="deptId"             <── Khớp ──> public int DeptId { get; set; }
+name="doctorName"         <── Khớp ──> public string? DoctorName { get; set; }
+Model.Departments         <── Khớp ──> public List<DepartmentDTO> Departments { get; set; }
+Model.Doctors             <── Khớp ──> public List<DoctorSearchDTO> Doctors { get; set; }
+
+FE (Analyze.cshtml)                   BE (Analyze.cshtml.cs)
+─────────────────────────────────────────────────────────────────
+{doctorId:int}            <── Khớp ──> OnGetAsync(int doctorId)
+Model.Doctor              <── Khớp ──> public DoctorDetailDTO? Doctor { get; set; }

@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GivenSolution 1\\Q2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GivenSolution 1\\Q2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Trainer\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GivenSolution 1\\Q2\\Views\\Trainer\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Trainer\\Analyze.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GivenSolution 1\\Q2\\Views\\Trainer\\Analyze.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Member\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GivenSolution 1\\Q2\\Views\\Member\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\CheatSheet_Q1_WebAPI.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CheatSheet_Q1_WebAPI.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
@@ -50,7 +70,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\appsettings.json",
+              "RelativeDocumentMoniker": "GivenSolution 1\\Q2\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\appsettings.json",
+              "RelativeToolTip": "GivenSolution 1\\Q2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-19T17:09:30.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Trainer\\Index.cshtml",
+              "RelativeDocumentMoniker": "GivenSolution 1\\Q2\\Views\\Trainer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Trainer\\Index.cshtml",
+              "RelativeToolTip": "GivenSolution 1\\Q2\\Views\\Trainer\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T16:15:05.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Analyze.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Trainer\\Analyze.cshtml",
+              "RelativeDocumentMoniker": "GivenSolution 1\\Q2\\Views\\Trainer\\Analyze.cshtml",
+              "ToolTip": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Trainer\\Analyze.cshtml",
+              "RelativeToolTip": "GivenSolution 1\\Q2\\Views\\Trainer\\Analyze.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T16:15:03.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Member\\Index.cshtml",
+              "RelativeDocumentMoniker": "GivenSolution 1\\Q2\\Views\\Member\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Views\\Member\\Index.cshtml",
+              "RelativeToolTip": "GivenSolution 1\\Q2\\Views\\Member\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-19T16:14:52.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Program.cs",
+              "RelativeDocumentMoniker": "GivenSolution 1\\Q2\\Program.cs",
+              "ToolTip": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q2\\Program.cs",
+              "RelativeToolTip": "GivenSolution 1\\Q2\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T15:55:48.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Program.cs",
               "RelativeDocumentMoniker": "GivenSolution 1\\Q1\\Program.cs",
@@ -58,12 +143,11 @@
               "RelativeToolTip": "GivenSolution 1\\Q1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T12:35:43.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T12:35:43.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "MembershipPackagesController.cs",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\Controllers\\MembershipPackagesController.cs",
               "RelativeDocumentMoniker": "GivenSolution 1\\Q1\\Controllers\\MembershipPackagesController.cs",
@@ -71,12 +155,11 @@
               "RelativeToolTip": "GivenSolution 1\\Q1\\Controllers\\MembershipPackagesController.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAFEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T12:12:08.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T12:12:08.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\GivenSolution 1\\Q1\\appsettings.json",
               "RelativeDocumentMoniker": "GivenSolution 1\\Q1\\appsettings.json",
@@ -84,12 +167,11 @@
               "RelativeToolTip": "GivenSolution 1\\Q1\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-19T12:10:35.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T12:10:35.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "scanffod.txt",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\scanffod.txt",
               "RelativeDocumentMoniker": "scanffod.txt",
@@ -97,12 +179,11 @@
               "RelativeToolTip": "scanffod.txt",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-11-19T12:05:55.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-19T12:05:55.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CheatSheet_Q1_WebAPI.md",
               "DocumentMoniker": "C:\\Users\\Mr Duc\\Downloads\\GivenSolution_PRN232\\PE_Prn232\\CheatSheet_Q1_WebAPI.md",
               "RelativeDocumentMoniker": "CheatSheet_Q1_WebAPI.md",

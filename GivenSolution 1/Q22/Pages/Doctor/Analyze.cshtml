@@ -1,0 +1,49 @@
+﻿@page "/Doctor/Analyze/{doctorId:int}"
+@model Q2.Pages.Doctor.AnalyzeModel
+@{
+    ViewData["Title"] = "Doctor Profile Analysis";
+}
+
+@if (Model.Doctor != null)
+{
+    <div class="analyze-wrap">
+        <div class="doctor-card">
+            <h3>Doctor Profile Analysis</h3>
+            <div class="card-item"><strong>Doctor ID:</strong> <span id="span_@Model.Doctor.DoctorID">@Model.Doctor.DoctorID</span></div>
+            <div class="card-item"><strong>Doctor Name:</strong> <span id="span_doctorName">@Model.Doctor.DoctorName</span></div>
+            <div class="card-item"><strong>Department:</strong> @Model.Doctor.DeptName</div>
+            <div class="card-item"><strong>Consultation Fee:</strong> <span id="span_fee">@Model.Doctor.ConsultationFee.ToString("#,##0.00")</span> VND</div>
+        </div>
+
+        <h4 style="margin-bottom: 15px; border-bottom: 1px solid #cbd5e1; padding-bottom: 10px; width: 800px; color: #334155;">Patient Appointment Logs</h4>
+
+        <table class="appt-table">
+            <thead>
+                <tr>
+                    <th style="width: 250px;">Patient Name</th>
+                    <th style="width: 200px;">Appointment Date</th>
+                    <th style="width: 150px;">Room Number</th>
+                    <th style="width: 200px;">Examination Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var log in Model.Doctor.AppointmentLogs)
+                {
+                    string statusDisplay = log.Status switch
+                    {
+                        "Da kham" => "Completed",
+                        "Dang cho" => "Waiting",
+                        _ => log.Status
+                    };
+
+                    <tr>
+                        <td id="td_patient_@(log.AppointmentID)_@(log.PatientID)">@log.PatientName</td>
+                        <td id="td_date_@log.AppointmentID">@log.ApptDate.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td id="td_room_@log.AppointmentID">@log.RoomNumber</td>
+                        <td id="td_status_@log.AppointmentID">@statusDisplay</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

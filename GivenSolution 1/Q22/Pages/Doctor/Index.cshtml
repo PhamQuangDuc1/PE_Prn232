@@ -1,0 +1,61 @@
+﻿
+@page
+@model Q2.Pages.Doctor.IndexModel
+@{
+    ViewData["Title"] = "Doctor Directory Management";
+}
+
+<div class="clinic-container">
+    <h2 style="margin-top: 0; margin-bottom: 20px; color: #0c4a6e;">Doctor Directory Management</h2>
+
+    <form method="get" action="/Doctor" class="filter-section">
+        <div class="filter-item">
+            <label>Department:</label>
+            <select name="deptId" id="sl_departments">
+                <option value="0" id="op_0">All departments</option>
+                @foreach (var dept in Model.Departments)
+                {
+                    if (dept.DeptID == Model.DeptId)
+                    {
+                        <option value="@dept.DeptID" id="op_@dept.DeptID" selected>@dept.DeptName</option>
+                    }
+                    else
+                    {
+                        <option value="@dept.DeptID" id="op_@dept.DeptID">@dept.DeptName</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label>Doctor Name:</label>
+            <input type="text" name="doctorName" id="ip_doctorName" value="@Model.DoctorName" placeholder="Enter doctor name...">
+        </div>
+
+        <button type="submit" id="bt_search" class="btn-submit">Search</button>
+    </form>
+
+    <table class="doctor-table">
+        <thead>
+            <tr>
+                <th style="width: 250px;">Doctor Name</th>
+                <th style="width: 150px;">Consultation Fee</th>
+                <th style="width: 200px;">Department</th>
+                <th style="width: 200px;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var doc in Model.Doctors)
+            {
+                <tr>
+                    <td id="td_name_@doc.DoctorID">@doc.DoctorName</td>
+                    <td id="td_fee_@doc.DoctorID">@doc.ConsultationFee.ToString("#,##0.00")</td>
+                    <td id="td_dept_@doc.DoctorID">@doc.DeptName</td>
+                    <td>
+                        <a href="/Doctor/Analyze/@doc.DoctorID" id="a_@doc.DoctorID" class="btn-action">Analyze Appointments</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

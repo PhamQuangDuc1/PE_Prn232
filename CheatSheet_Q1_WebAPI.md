@@ -9,7 +9,7 @@
 3. [Dạng 2: GET Filter / Tìm kiếm đa điều kiện (In hoa/thường, Case-Insensitive)](#3-dạng-2-get-filter--tìm-kiếm-đa-điều-kiện)
 4. [Dạng 3: SUM / AVG / MIN / MAX (Tính tổng tiền qua 2-3 bảng quan hệ, chống lỗi Null)](#4-dạng-3-sum--avg--min--max-chống-lỗi-null)
 5. [Dạng 4: Lấy bản ghi Mới nhất / Gần nhất (Recent / Latest) + Fallback chuỗi](#5-dạng-4-lấy-bản-ghi-mới-nhất--gần-nhất-recent--latest)
-6. [Dạng 5: In hoa, In thường, Cắt chuỗi, Format Ngày tháng](#6-dạng-5-biến-đổi-chuỗi-in-hoathường-format-ngày)
+6. [Dạng 5: Biến đổi chuỗi (In hoa/thường, IN HOA CHỮ CÁI ĐẦU, Format ngày)](#6-dạng-5-biến-đổi-chuỗi-in-hoathường-in-hoa-chữ-cái-đầu-format-ngày)
 7. [Dạng 6: Lọc theo khoảng thời gian (Date Range Filter)](#7-dạng-6-lọc-theo-khoảng-thời-gian-date-range)
 8. [Dạng 7: Phân trang (Pagination: Skip & Take)](#8-dạng-7-phân-trang-pagination)
 9. [Dạng 8: GET Chi tiết theo ID (Check 404 Not Found)](#9-dạng-8-get-chi-tiết-theo-id)
@@ -19,6 +19,13 @@
 13. [Mẫu PUT: Cập nhật + Check 404 + Check trùng](#13-mẫu-put-cập-nhật--check-404--check-trùng)
 14. [Những lỗi "chí mạng" cần tránh để không bị 0 điểm](#14-những-lỗi-chí-mạng-cần-tránh-để-không-bị-0-điểm)
 15. [ĐỀ BIẾN THỂ MỚI: OData, 204 No Content, 409 Conflict, Validate Email & String ID](#15-đề-biến-thể-mới-odata-204-no-content-409-conflict-validate-email--string-id)
+    - [15.1. Bảng so sánh sự khác biệt giữa 2 dạng đề thi](#151-bảng-so-sánh-sự-khác-biệt-giữa-2-dạng-đề-thi)
+    - [15.2. Mẫu 1: GET Orders có OData + Trả về 204 No Content nếu rỗng + JSON con lồng nhau](#152-mẫu-1-get-orders-có-odata--trả-về-204-no-content-nếu-rỗng--json-con-lồng-nhau)
+    - [15.3. Mẫu 2: GET Products By Tag nhận `string {tagId}` + Validate 400, 404, 204, 200](#153-mẫu-2-get-products-by-tag-nhận-string-tagid--validate-400-404-204-200)
+    - [15.4. Mẫu 3: POST Customer + Validate Email rỗng / sai định dạng (400) + Check trùng (409 Conflict)](#154-mẫu-3-post-customer--validate-email-rỗng--sai-định-dạng-400--check-trùng-409-conflict)
+    - [15.5. Mẫu 4: DELETE Customer + Trả về 200 OK (thay vì 204)](#155-mẫu-4-delete-customer--trả-về-200-ok-thay-vì-204)
+16. [Mẫu GET Search Tổng Hợp (IQueryable + Keyword + Min/Max + Bảng con)](#16-mẫu-get-search-tổng-hợp-iqueryable--keyword--minmax--bảng-con)
+17. [Bảng Tổng Hợp Các Lỗi Kinh Điển Khi Đi Thi & Cách Sửa](#17-bảng-tổng-hợp-các-lỗi-kinh-điển-khi-đi-thi--cách-sửa)
 
 ---
 
@@ -573,7 +580,7 @@ public IActionResult UpdateDepartment(int deptId, [FromBody] DepartmentCreateDto
 
 > 🚨 **CẢNH BÁO:** Đây là bộ đề thi dạng 2 (chủ đề Shop / Products / Orders / Customers) có sự khác biệt rất lớn về **Mã trạng thái HTTP (Status Code)** và **Cấu trúc JSON**. Đọc kỹ đề để không bị mất điểm!
 
-### 15.1. Bảng so sánh sự khác biệt giữa 2 dạng đề thi:
+### 15.1. Bảng so sánh sự khác biệt giữa 2 dạng đề thi
 
 | Yêu cầu | Dạng đề 1 (Gym, Bệnh viện) | Dạng đề 2 (Shop, Products, Orders) |
 | :--- | :--- | :--- |
@@ -751,3 +758,68 @@ public IActionResult DeleteCustomer(int customerId)
     return Ok("Customer deleted successfully"); // 200 OK
 }
 ```
+
+---
+
+## 16. Mẫu GET Search Tổng Hợp (IQueryable + Keyword + Min/Max + Bảng con)
+
+```csharp
+// GET: /api/search?keyword=a&minYear=1990&maxYear=2000&deptId=1
+[HttpGet("search")]
+public IActionResult Search(
+    [FromQuery] string? keyword,
+    [FromQuery] int? minYear,
+    [FromQuery] int? maxYear,
+    [FromQuery] int? deptId)
+{
+    // Bắt đầu với IQueryable (chưa chạy xuống DB)
+    var query = _context.Patients.AsQueryable();
+    // 1. Lọc chuỗi (Chống null, không phân biệt hoa thường)
+    if (!string.IsNullOrWhiteSpace(keyword))
+    {
+        string kw = keyword.Trim().ToLower();
+        query = query.Where(p => p.FullName != null && p.FullName.ToLower().Contains(kw));
+    }
+    // 2. Lọc số (Min / Max)
+    if (minYear.HasValue)
+    {
+        query = query.Where(p => p.BirthYear >= minYear.Value);
+    }
+    if (maxYear.HasValue)
+    {
+        query = query.Where(p => p.BirthYear <= maxYear.Value);
+    }
+    // 3. Lọc theo bảng con (Ví dụ: Bệnh nhân từng khám ở Khoa deptId)
+    if (deptId.HasValue && deptId.Value > 0)
+    {
+        query = query.Where(p => p.Appointments.Any(a => 
+            a.AppointmentDetails.Any(ad => ad.Doctor.DeptId == deptId.Value)
+        ));
+    }
+    // 4. Select ra DTO / Anonymous Object
+    var result = query
+        .OrderByDescending(p => p.PatientId)
+        .Select(p => new
+        {
+            p.PatientId,
+            p.FullName,
+            p.Phone,
+            p.BirthYear,
+            TotalAppointments = p.Appointments.Count()
+        })
+        .ToList(); // Lúc này câu SQL mới được sinh ra và thực thi
+    return Ok(result);
+}
+```
+
+---
+
+## 17. Bảng Tổng Hợp Các Lỗi Kinh Điển Khi Đi Thi & Cách Sửa
+
+| Triệu chứng | Nguyên nhân | Cách khắc phục |
+| :--- | :--- | :--- |
+| `CS0119: 'Patient' is a type...` | Gọi `.Select()` trên tên Class: `Patient.Select(...)` | Gọi trên biến: `query.Select(...)` |
+| `CS1061: 'int' does not contain a definition for 'Any'` | Gọi `.Any()` trên thuộc tính số/chuỗi | Chỉ dùng `.Any()` trên Navigation Property (List, ICollection) |
+| `NullReferenceException` khi tính `Sum` | Bảng con rỗng hoặc cột giá trị mang giá trị `null` | Ép kiểu nullable: `Sum(x => (decimal?)x.Fee) ?? 0` |
+| `System.InvalidOperationException: The LINQ expression could not be translated` | Gọi hàm C# thuần (như `ToString("dd/MM/yyyy")`, Regex, hàm tự viết) bên trong `Where` hoặc `Select` | Chuyển dữ liệu về bộ nhớ bằng `.AsEnumerable()` hoặc `.ToList()` trước khi định dạng chuỗi |
+| Lỗi ghi đè sắp xếp | Dùng 2 lần `OrderBy`: `query.OrderBy(...).OrderBy(...)` | Dùng `OrderBy` rồi nối tiếp bằng `ThenBy` |

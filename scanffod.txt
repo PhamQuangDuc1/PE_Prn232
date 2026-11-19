@@ -1,4 +1,4 @@
-dotnet ef dbcontext scaffold "Server=(localdb)\MSSQLLocalDB;Database=PRN232_PE_SU26_13;User Id=sa;Password=12345;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+dotnet ef dbcontext scaffold "Server=(localdb)\MSSQLLocalDB;Database=PRN232_SU26_BL5_1;User Id=sa;Password=12345;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
 
 
 program---
@@ -20,7 +20,7 @@ if(app.Environment.IsDevelopment())
 }
 
 app.MapGet("/", () => "Hello World!");
-
+app.MapControllers();
 app.Run();
 -----------------------------------------
 dbcontext---------------
@@ -36,3 +36,10 @@ dbcontext---------------
      }
  }
 ---------------------------------------------
+controller----------------
+ private readonly Prn232Su26Bl51Context _context;
+        // 👉 THÊM CONSTRUCTOR NÀY:
+        public Departments(Prn232Su26Bl51Context context)
+        {
+            _context = context;
+        }
